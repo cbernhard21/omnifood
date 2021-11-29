@@ -85,7 +85,7 @@ Starter: $399 per month
 
 Complete: $649 per month
 
-- 2 meal2 per day
+- 2 meal 2 per day
 - Order 24/7
 - Delivery is free
 - Get access to latest recipes
@@ -119,10 +119,8 @@ Create account
 Sign in
 iOS app
 Android app
+
 About Omnifood
 For Business
 Cooking partners
 Careers
-Recipe directory
-Help center
-Privacy & terms
