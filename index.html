@@ -5,16 +5,25 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Omnifood is an AI-powered food subscription that will make you eat healthy again, 365 days per year.  It's tailored to your personal tastes and nutritional needs.">
+  <link rel="icon" href="img/favicon-1.png">
+  <link rel="apple-touch" href="img/apple-touch-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <!-- fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Local stylesheets -->
   <link rel="stylesheet" href="styles/general.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/queries.css">
+  <!-- ion icons links -->
   <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
-
-  <title>Omni Foods</title>
-
+  <!-- my js file -->
+  <script defer src="js/app.js"></script>
+  <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+  <title>OmniFoods &mdash; Never cook again</title>
 </head>
 
 <body>
@@ -23,15 +32,22 @@
     <a href="#">
       <img src="img/logos/omnifood-logo.png" alt="Omnifood Logo" class="logo">
     </a>
+
     <nav class="main-nav">
       <ul class="main-nav-list">
-        <li><a class="main-nav-link" href="#">Section 1</a></li>
-        <li><a class="main-nav-link" href="#">Section 2</a></li>
-        <li><a class="main-nav-link" href="#">Section 3</a></li>
-        <li><a class="main-nav-link" href="#">Section 4</a></li>
-        <li><a class="main-nav-link nav-cta" href="#">Section 5</a></li>
+        <li><a class="main-nav-link" href="#how">How It Works</a></li>
+        <li><a class="main-nav-link" href="#meals">Meals</a></li>
+        <li><a class="main-nav-link" href="#testimonials">Testimonials</a></li>
+        <li><a class="main-nav-link" href="#pricing">Pricing</a></li>
+        <li><a class="main-nav-link nav-cta" href="#cta">Try For Free</a></li>
       </ul>
     </nav>
+
+
+    <button class="btn-mobile-nav">
+      <ion-icon class="icon-mobile-nav" name="menu"></ion-icon>
+      <ion-icon class="icon-mobile-nav" name="close"></ion-icon>
+    </button>
   </header>
 
   <main>
@@ -44,8 +60,8 @@
           <h1 class="heading-primary">A healthy meal delivered to your door, every single day</h1>
           <p class="hero-description">The smart 365-days-per-year food subscription that will make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
 
-          <a href="#" class="btn btn--full margin-right-sm">Start eating well</a>
-          <a href="#" class="btn btn--outline">Learn more &darr;</a>
+          <a href="#cta" class="btn btn--full margin-right-sm">Start eating well</a>
+          <a href="#how" class="btn btn--outline">Learn more &darr;</a>
           <div class="delivered-meals">
             <div class="delivered-imgs">
               <img src="img/customers/customer-1.jpg" alt="Customer photo">
@@ -59,7 +75,7 @@
           </div>
         </div>
         <div class="hero-img-box">
-          <img src="img/hero.png" class="hero-img" alt="Woman enjoying food, meals in storage containter, and food bowls on a table" />
+          <img src="img/hero-min.png" class="hero-img" alt="Woman enjoying food, meals in storage containter, and food bowls on a table" />
         </div>
       </div>
     </section>
@@ -82,7 +98,7 @@
 
     <!-- HOW TO SECTION -->
 
-    <section class="section-how">
+    <section class="section-how" id="how">
       <div class="container">
         <span class="subheading">How It Works</span>
         <h2 class="heading-secondary">Your daily dose of health in 3 simple steps</h2>
@@ -128,7 +144,7 @@
 
     <!-- MEALS SECTION  -->
 
-    <section class="section-meals">
+    <section class="section-meals" id="meals">
       <div class="container center-text">
         <span class="subheading">Meals</span>
         <h2 class="heading-secondary">Omnifood AI chooses from 5,000+ recipes</h2>
@@ -236,7 +252,7 @@
     </section>
 
     <!-- TESTIMONIAL SECTION -->
-    <section class="section-testimonials">
+    <section class="section-testimonials" id="testimonials">
 
       <div class="testimonials-container">
 
@@ -324,7 +340,7 @@
 
     <!-- PRICING SECTION -->
 
-    <section class="section-pricing">
+    <section class="section-pricing" id="pricing">
 
       <div class="container">
         <span class="subheading">Pricing</span>
@@ -431,7 +447,7 @@
     </section>
 
     <!-- CALL TO ACTION -->
-    <section class="section-cta">
+    <section class="section-cta" id="cta">
       <div class="container">
 
 
@@ -474,7 +490,7 @@
   </main>
   <!-- FOOTER -->
   <footer class="footer">
-    <div class="container grid grid--5--cols">
+    <div class="container grid grid-footer">
       <div class="logo-col">
         <a href="#" class="footer-logo">
           <img src="img/logos/omnifood-logo.png" alt="Omnifood Logo" class="logo">
@@ -482,61 +498,61 @@
 
         <ul class="social-links">
           <li>
-            <a href="#">
-              <ion-icon name="logo-instagram"></ion-icon>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-instagram"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-facebook"></ion-icon>
             </a>
           </li>
           <li>
-            <a href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
+            <a class="footer-link" href="#">
+              <ion-icon class="social-icon" name="logo-twitter"></ion-icon>
             </a>
           </li>
         </ul>
 
-        <p class="copyright">Copyright &copy; 2027 by Omnifood, Inc. All rights reserved</p>
+        <p class="copyright">Copyright &copy; <span class="year">2027</span> by Omnifood, Inc. All rights reserved</p>
 
       </div>
       <div class="address-col">
 
         <p class="footer-header">Contact Us</p>
         <address class="contacts">
-          <p>623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
-          <p><a href="tel:415-201-6370">415-201-6370</a></p>
-          <p><a href="mailto:hello@omnifood.com">hello@omnifood.com</a></p>
+          <p class="address">623 Harrison St., 2nd Floor, San Francisco, CA 94107</p>
+          <p><a class="footer-link" href="tel:415-201-6370">415-201-6370</a></p>
+          <p><a class="footer-link" href="mailto:hello@omnifood.com">hello@omnifood.com</a></p>
         </address>
       </div>
 
       <nav class="nav-col">
         <p class="footer-header">Account</p>
         <ul class="footer-nav">
-          <li><a href="#">Create account</a></li>
-          <li><a href="#">Sign in</a></li>
-          <li><a href="#">iOS app</a></li>
-          <li><a href="#">Android app</a></li>
+          <li><a class="footer-link" href="#">Create account</a></li>
+          <li><a class="footer-link" href="#">Sign in</a></li>
+          <li><a class="footer-link" href="#">iOS app</a></li>
+          <li><a class="footer-link" href="#">Android app</a></li>
         </ul>
       </nav>
 
       <nav class="nav-col">
         <p class="footer-header">Company</p>
         <ul class="footer-nav">
-          <li><a href="#">About Omnifood</a></li>
-          <li><a href="#">For Business</a></li>
-          <li><a href="#">Cooking partners</a></li>
-          <li><a href="#">Careers</a></li>
+          <li><a class="footer-link" href="#">About Omnifood</a></li>
+          <li><a class="footer-link" href="#">For Business</a></li>
+          <li><a class="footer-link" href="#">Cooking partners</a></li>
+          <li><a class="footer-link" href="#">Careers</a></li>
         </ul>
       </nav>
 
       <nav class="nav-col">
         <p class="footer-header">Resources</p>
         <ul class="footer-nav">
-          <li><a href="#">Recipe directory</a></li>
-          <li><a href="#">Help center</a></li>
-          <li><a href="#">Privacy & terms</a></li>
+          <li><a class="footer-link" href="#">Recipe directory</a></li>
+          <li><a class="footer-link" href="#">Help center</a></li>
+          <li><a class="footer-link" href="#">Privacy & terms</a></li>
         </ul>
       </nav>
 
